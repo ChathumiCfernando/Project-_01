@@ -26,9 +26,6 @@ video::-webkit-media-controls {
   display: none !important;
 }
 
-.bgvideomain:hover {
-}
-
 .gh3developers {
   width: 49.7%;
   height: 100%;
@@ -37,6 +34,9 @@ video::-webkit-media-controls {
 }
 
 .gh3logos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 15vw;
   margin-top: 50vh;
 }
@@ -45,6 +45,10 @@ video::-webkit-media-controls {
   text-decoration: none;
   font-size: 1vw;
   color: rgb(137, 212, 224);
+}
+
+.mainWebsites h1{
+  text-align: center;
 }
 
 /* main page */
@@ -64,3 +68,30 @@ video::-webkit-media-controls {
 } */
 
 /* Navigation Bar */ ;
+
+
+/*GH3 Developers Page*/
+.navbar{
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.navbar a{
+  float: right;
+  background-color: cadetblue;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 50px 15px 50px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover{
+  background-color: aquamarine;
+  color: black;
+}
+
+.navbar a:active{
+  background-color: blue;
+  color: white;
+}
