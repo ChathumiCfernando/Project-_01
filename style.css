@@ -1,10 +1,16 @@
 body {
   margin: 0;
-  font-family: "HartwellAlt-Regular", sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Sora", sans-serif;
 }
 
 /* main page */
+.main {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.headerBG {
+  z-index: -2;
+}
 
 .gh3gamers {
   width: 49.7%;
@@ -22,10 +28,6 @@ body {
   cursor: pointer;
 }
 
-video::-webkit-media-controls {
-  display: none !important;
-}
-
 .gh3developers {
   width: 49.7%;
   height: 100%;
@@ -34,9 +36,6 @@ video::-webkit-media-controls {
 }
 
 .gh3logos {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 15vw;
   margin-top: 50vh;
 }
@@ -47,51 +46,135 @@ video::-webkit-media-controls {
   color: rgb(137, 212, 224);
 }
 
-.mainWebsites h1{
-  text-align: center;
+/* main page */
+
+/* gaming main page */
+.gamingMainPage {
+  background-image: url(/Images/gh3bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  
+}
+/* gaming main page */
+
+/* news box */
+
+.newsBox {
+  width: 100vw;
 }
 
-/* main page */
+.newsBox a div {
+  width: 15vw;
+  height: 10vw;
+  display: inline-block;
+  background-image: url(/Images/newsbox/01.jpg);
+  background-size: cover;
+  
+}
+
+@media screen and (max-width: 500px){
+  .newsBox {
+    
+  }
+}
+
+
+
+/* news box */
 
 /* Navigation Bar */
 
-/* .navigationBar {
+.navigationBar {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  background-color: rgba(54, 54, 54, 0.7);
+  ;
+}
+
+.navigationBar ul {
   list-style-type: none;
+  margin: 0;
+  padding: 5px;
 }
 
 .navigationBar li {
   display: inline;
 }
 
-.logo {
+.navigationBar img {
   width: 50px;
-} */
-
-/* Navigation Bar */ ;
-
-
-/*GH3 Developers Page*/
-.navbar{
-  background-color: aqua;
-  overflow: hidden;
+  padding: 5px 0 5px 10px;
 }
 
-.navbar a{
-  float: right;
-  background-color: cadetblue;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 50px 15px 50px;
+.navigationBar ul li a {
+  color: rgb(101, 255, 252);
   text-decoration: none;
-  font-size: 18px;
+  padding: 18px 8px 18px 8px;
 }
 
-.navbar a:hover{
-  background-color: aquamarine;
-  color: black;
+.navigationBar ul li a:hover {
+  background-color: rgba(71, 69, 69, 0.5);
+  color: rgb(210, 247, 246);
+  border-radius: 4px;
 }
 
-.navbar a:active{
-  background-color: blue;
-  color: white;
+#active {
+  background-color: rgb(135, 248, 246);
+  color: rgb(38, 39, 39);
+  border-radius: 4px;
 }
+
+@media screen and (max-width: 900px) {
+  .navigationBar ul li {
+    font-size: 15px;
+  }
+  .navigationBar ul li a {
+    padding: 14px 6px 14px 6px;
+  }
+  .navigationBar img {
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigationBar ul li {
+    font-size: 13px;
+  }
+  .navigationBar ul li a {
+    padding: 10px 4px 10px 4px;
+  }
+  .navigationBar img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navigationBar ul li {
+    font-size: 11px;
+  }
+  .navigationBar ul li a {
+    padding: 9px 3px 9px 3px;
+  }
+  .navigationBar img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navigationBar ul li {
+    font-size: 10px;
+  }
+  .navigationBar ul li a {
+    padding: 8px 3px 8px 3px;
+  }
+  .navigationBar img {
+    width: 33px;
+  }
+}
+
+/* Navigation Bar */
+
+
+
