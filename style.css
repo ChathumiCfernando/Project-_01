@@ -49,34 +49,52 @@ body {
 /* main page */
 
 /* gaming main page */
-.gamingMainPage {
-  background-image: url(/Images/gh3bg.png);
+
+.bggamingmainpage {
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+  cursor: pointer;
+}
+
+/* .gamingMainPage {
+  background-video: url(/Images/gh3bg.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   
-}
+} */
 /* gaming main page */
 
 /* news box */
 
 .newsBox {
   width: 100vw;
+  margin-top: 35vw;
 }
 
 .newsBox a div {
-  width: 15vw;
-  height: 10vw;
+  width: 20vw;
+  height: 15vw;
   display: inline-block;
-  background-image: url(/Images/newsbox/01.jpg);
   background-size: cover;
+  margin-right: 6px;
   
 }
 
-@media screen and (max-width: 500px){
-  .newsBox {
-    
-  }
+.news01 {
+  background-image: url(/Images/newsbox/01.jpg);
 }
+.news02 {
+  background-image: url(/Images/newsbox/02.jpg);
+}
+.news03 {
+  background-image: url(/Images/newsbox/03.jpg);
+}
+.news04 {
+  background-image: url(/Images/newsbox/04.jpg);
+}
+
 
 
 
@@ -89,7 +107,7 @@ body {
   align-items: center;
   overflow: hidden;
   width: 100vw;
-  background-color: rgba(54, 54, 54, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   ;
 }
 
