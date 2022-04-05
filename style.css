@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "HartwellAlt-Regular", sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(63, 62, 62);
 }
 
 /* main page */
@@ -71,27 +71,93 @@ video::-webkit-media-controls {
 
 
 /*GH3 Developers Page*/
-.navbar{
-  background-color: aqua;
+
+.left-navbar{
   overflow: hidden;
 }
 
-.navbar a{
-  float: right;
-  background-color: cadetblue;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 50px 15px 50px;
-  text-decoration: none;
-  font-size: 18px;
+.left-navbar img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 40%;
+  border-radius: 50%;
+  border: 7px solid grey;
 }
 
-.navbar a:hover{
-  background-color: aquamarine;
-  color: black;
-}
-
-.navbar a:active{
-  background-color: blue;
+.left-navbar h1{
   color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 2.5rem;
+}
+
+.left-navbar ul{
+  padding: 0;
+}
+
+.left-navbar li{
+  color: white;
+  list-style: none;
+  font-size: 1.2vw;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+.left-navbar li:hover{
+  color: rgb(24, 108, 197);
+}
+
+.left-navbar a{
+  text-decoration: none;
+}
+
+.gh3developers_body img{
+  position: relative;
+  height: 100%;
+  width: 82%;
+  display: block;
+  margin-left: auto;
+  opacity: 0.5;
+}
+
+.centered-text{
+  font-size: 1.3vw;
+  position: absolute;
+  top: 40%;
+  left: 59%;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+
+.container{
+  padding-top: 10rem;
+  font-size: 1.6vw;
+  position: absolute;
+  top: 40%;
+  left: 59%;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+
+.gh3_dev_type{
+  width: 100%;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1em solid;
+  font-size: 2em;
+
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
